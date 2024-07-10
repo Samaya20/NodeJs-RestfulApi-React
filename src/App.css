@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
+  align-items: start;
+  background: rgb(51, 51, 51);
+  width: 30%;
+  margin: 20px auto;
+  border-radius: 8px;
+  padding: 30px 30px;
+}
+
+.container h1 {
+  font-size: 30px;
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
+
+.container form {
+  width: 100%;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container form label {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.container form label span {
+  color: whitesmoke;
+}
+
+.container form label input {
+  width: 100%;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.container form button {
+  background: rgb(35, 175, 35);
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  color: whitesmoke;
+}
+
+.container ul {
+  width: 100%;
+  height: 350px;
+  overflow-y: scroll;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container ul li {
+  background: gray;
+  width: 100%;
+  padding: 20px;
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  border-radius: 8px;
+  color: whitesmoke;
 }
 
-.App-link {
-  color: #61dafb;
+.container ul li .info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container ul li .info p {
+  color: rgb(42, 42, 42);
+}
+
+.container ul li .info p span {
+  color: rgb(255, 255, 255)
+}
+
+.container ul li button {
+  background: rgb(198, 29, 29);
+  padding: 10px 30px;
+  border: none;
+  border-radius: 8px;
+  color: whitesmoke;
 }
