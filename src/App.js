@@ -14,7 +14,7 @@ const App = () => {
 
   const fetchStudents = () => {
     axios
-      .get("http://localhost:5000/students")
+      .get("https://my-nodex-server.vercel.app/students")
       .then((response) => {
         setStudents(response.data);
       })
@@ -35,7 +35,7 @@ const App = () => {
     };
 
     axios
-      .post("http://localhost:5000/students", newStudent)
+      .post("https://my-nodex-server.vercel.app/students", newStudent)
       .then((response) => {
         console.log("New student added: ", response.data);
         setName("");
@@ -50,7 +50,7 @@ const App = () => {
 
   const handleDelete = (id) => {
     axios
-      .delete(`http://localhost:5000/students/${id}`)
+      .delete(`https://my-nodex-server.vercel.app/students/${id}`)
       .then((response) => {
         console.log("Student deleted");
         fetchStudents();
