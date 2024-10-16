@@ -1,13 +1,13 @@
 NodeJs/Express istifadə edərək Restful Api yazılması və React ilə UI işlənməsi
 
 
-Yüklənməli olan əlavələr :
+İstifadə edilən əlavə kitabxanalar :
 
-1. npm install express
+1. express
 
-2. npm install axios
+2. axios
 
-3. npm install cors
+3. cors
 
 
 
